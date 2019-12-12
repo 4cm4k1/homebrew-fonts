@@ -1,9 +1,8 @@
 name: automerge
 
 on:
-  - status
-  - schedule:
-      - cron: '*/15 * * * *'
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   automerge:

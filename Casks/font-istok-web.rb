@@ -10,8 +10,6 @@ cask 'font-istok-web' do
   name 'Istok Web'
   homepage 'https://www.google.com/fonts/specimen/Istok%20Web'
 
-  depends_on macos: '>= :sierra'
-
   font 'IstokWeb-Bold.ttf'
   font 'IstokWeb-BoldItalic.ttf'
   font 'IstokWeb-Italic.ttf'

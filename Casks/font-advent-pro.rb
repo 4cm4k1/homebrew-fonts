@@ -10,8 +10,6 @@ cask 'font-advent-pro' do
   name 'Advent Pro'
   homepage 'https://www.google.com/fonts/specimen/Advent%20Pro'
 
-  depends_on macos: '>= :sierra'
-
   font 'AdventPro-Bold.ttf'
   font 'AdventPro-ExtraLight.ttf'
   font 'AdventPro-Light.ttf'

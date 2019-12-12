@@ -10,8 +10,6 @@ cask 'font-noticia-text' do
   name 'Noticia Text'
   homepage 'https://www.google.com/fonts/specimen/Noticia%20Text'
 
-  depends_on macos: '>= :sierra'
-
   font 'NoticiaText-Bold.ttf'
   font 'NoticiaText-BoldItalic.ttf'
   font 'NoticiaText-Italic.ttf'

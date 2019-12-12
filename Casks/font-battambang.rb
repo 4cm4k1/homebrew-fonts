@@ -10,8 +10,6 @@ cask 'font-battambang' do
   name 'Battambang'
   homepage 'https://www.google.com/fonts/specimen/Battambang'
 
-  depends_on macos: '>= :sierra'
-
   font 'Battambang-Bold.ttf'
   font 'Battambang-Regular.ttf'
 end

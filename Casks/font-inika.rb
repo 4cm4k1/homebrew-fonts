@@ -10,8 +10,6 @@ cask 'font-inika' do
   name 'Inika'
   homepage 'https://www.google.com/fonts/specimen/Inika'
 
-  depends_on macos: '>= :sierra'
-
   font 'Inika-Bold.ttf'
   font 'Inika-Regular.ttf'
 end

@@ -10,8 +10,6 @@ cask 'font-overlock' do
   name 'Overlock'
   homepage 'https://www.google.com/fonts/specimen/Overlock'
 
-  depends_on macos: '>= :sierra'
-
   font 'Overlock-Black.ttf'
   font 'Overlock-BlackItalic.ttf'
   font 'Overlock-Bold.ttf'

@@ -10,8 +10,6 @@ cask 'font-sniglet' do
   name 'Sniglet'
   homepage 'https://www.google.com/fonts/specimen/Sniglet'
 
-  depends_on macos: '>= :sierra'
-
   font 'Sniglet-ExtraBold.ttf'
   font 'Sniglet-Regular.ttf'
 end

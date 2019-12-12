@@ -10,8 +10,6 @@ cask 'font-puritan' do
   name 'Puritan'
   homepage 'https://www.google.com/fonts/specimen/Puritan'
 
-  depends_on macos: '>= :sierra'
-
   font 'Puritan-Bold.ttf'
   font 'Puritan-BoldItalic.ttf'
   font 'Puritan-Italic.ttf'

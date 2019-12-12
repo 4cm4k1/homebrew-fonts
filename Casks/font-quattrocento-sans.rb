@@ -10,8 +10,6 @@ cask 'font-quattrocento-sans' do
   name 'Quattrocento Sans'
   homepage 'https://www.google.com/fonts/specimen/Quattrocento%20Sans'
 
-  depends_on macos: '>= :sierra'
-
   font 'QuattrocentoSans-Bold.ttf'
   font 'QuattrocentoSans-BoldItalic.ttf'
   font 'QuattrocentoSans-Italic.ttf'

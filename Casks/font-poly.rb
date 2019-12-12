@@ -10,8 +10,6 @@ cask 'font-poly' do
   name 'Poly'
   homepage 'https://www.google.com/fonts/specimen/Poly'
 
-  depends_on macos: '>= :sierra'
-
   font 'Poly-Italic.ttf'
   font 'Poly-Regular.ttf'
 end

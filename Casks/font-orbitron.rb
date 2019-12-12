@@ -10,8 +10,6 @@ cask 'font-orbitron' do
   name 'Orbitron'
   homepage 'https://www.google.com/fonts/specimen/Orbitron'
 
-  depends_on macos: '>= :sierra'
-
   font 'Orbitron-Black.ttf'
   font 'Orbitron-Bold.ttf'
   font 'Orbitron-Medium.ttf'

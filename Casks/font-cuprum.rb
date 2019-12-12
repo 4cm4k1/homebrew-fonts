@@ -10,8 +10,6 @@ cask 'font-cuprum' do
   name 'Cuprum'
   homepage 'https://www.google.com/fonts/specimen/Cuprum'
 
-  depends_on macos: '>= :sierra'
-
   font 'Cuprum-Bold.ttf'
   font 'Cuprum-BoldItalic.ttf'
   font 'Cuprum-Italic.ttf'

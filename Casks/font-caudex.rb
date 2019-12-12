@@ -10,8 +10,6 @@ cask 'font-caudex' do
   name 'Caudex'
   homepage 'https://www.google.com/fonts/specimen/Caudex'
 
-  depends_on macos: '>= :sierra'
-
   font 'Caudex-Bold.ttf'
   font 'Caudex-BoldItalic.ttf'
   font 'Caudex-Italic.ttf'

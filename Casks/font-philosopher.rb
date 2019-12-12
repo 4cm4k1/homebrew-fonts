@@ -10,8 +10,6 @@ cask 'font-philosopher' do
   name 'Philosopher'
   homepage 'https://www.google.com/fonts/specimen/Philosopher'
 
-  depends_on macos: '>= :sierra'
-
   font 'Philosopher-Bold.ttf'
   font 'Philosopher-BoldItalic.ttf'
   font 'Philosopher-Italic.ttf'

@@ -10,8 +10,6 @@ cask 'font-quicksand' do
   name 'Quicksand'
   homepage 'https://www.google.com/fonts/specimen/Quicksand'
 
-  depends_on macos: '>= :sierra'
-
   font 'Quicksand-Bold.ttf'
   font 'Quicksand-BoldItalic.ttf'
   font 'Quicksand-Italic.ttf'

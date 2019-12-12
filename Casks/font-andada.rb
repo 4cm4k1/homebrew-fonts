@@ -10,8 +10,6 @@ cask 'font-andada' do
   name 'Andada'
   homepage 'https://www.google.com/fonts/specimen/Andada'
 
-  depends_on macos: '>= :sierra'
-
   font 'Andada-Bold.ttf'
   font 'Andada-BoldItalic.ttf'
   font 'Andada-Italic.ttf'

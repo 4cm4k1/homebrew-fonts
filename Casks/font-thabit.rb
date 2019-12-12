@@ -10,8 +10,6 @@ cask 'font-thabit' do
   name 'Thabit'
   homepage 'https://www.arabeyes.org/'
 
-  depends_on macos: '>= :sierra'
-
   font 'Thabit-Bold.ttf'
   font 'Thabit-BoldOblique.ttf'
   font 'Thabit-Oblique.ttf'

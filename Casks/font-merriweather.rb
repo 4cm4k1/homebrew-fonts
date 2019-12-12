@@ -10,8 +10,6 @@ cask 'font-merriweather' do
   name 'Merriweather'
   homepage 'https://www.google.com/fonts/specimen/Merriweather'
 
-  depends_on macos: '>= :sierra'
-
   font 'Merriweather-Black.ttf'
   font 'Merriweather-BlackItalic.ttf'
   font 'Merriweather-Bold.ttf'

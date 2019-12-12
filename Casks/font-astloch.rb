@@ -10,8 +10,6 @@ cask 'font-astloch' do
   name 'Astloch'
   homepage 'https://www.google.com/fonts/specimen/Astloch'
 
-  depends_on macos: '>= :sierra'
-
   font 'Astloch-Bold.ttf'
   font 'Astloch-Regular.ttf'
 end

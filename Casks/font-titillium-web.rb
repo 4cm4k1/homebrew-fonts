@@ -10,8 +10,6 @@ cask 'font-titillium-web' do
   name 'Titillium Web'
   homepage 'https://www.google.com/fonts/specimen/Titillium%20Web'
 
-  depends_on macos: '>= :sierra'
-
   font 'TitilliumWeb-Black.ttf'
   font 'TitilliumWeb-Bold.ttf'
   font 'TitilliumWeb-BoldItalic.ttf'

@@ -10,8 +10,6 @@ cask 'font-rokkitt' do
   name 'Rokkitt'
   homepage 'https://www.google.com/fonts/specimen/Rokkitt'
 
-  depends_on macos: '>= :sierra'
-
   font 'Rokkitt-Bold.ttf'
   font 'Rokkitt-Light.ttf'
   font 'Rokkitt-Regular.ttf'

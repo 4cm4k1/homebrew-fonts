@@ -10,8 +10,6 @@ cask 'font-gudea' do
   name 'Gudea'
   homepage 'https://www.google.com/fonts/specimen/Gudea'
 
-  depends_on macos: '>= :sierra'
-
   font 'Gudea-Bold.ttf'
   font 'Gudea-Italic.ttf'
   font 'Gudea-Regular.ttf'

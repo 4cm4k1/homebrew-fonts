@@ -10,8 +10,6 @@ cask 'font-cabin' do
   name 'Cabin'
   homepage 'https://www.google.com/fonts/specimen/Cabin'
 
-  depends_on macos: '>= :sierra'
-
   font 'Cabin-Bold.ttf'
   font 'Cabin-BoldItalic.ttf'
   font 'Cabin-Italic.ttf'

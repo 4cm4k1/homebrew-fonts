@@ -10,8 +10,6 @@ cask 'font-oxygen' do
   name 'Oxygen'
   homepage 'https://www.google.com/fonts/specimen/Oxygen'
 
-  depends_on macos: '>= :sierra'
-
   font 'Oxygen-Bold.ttf'
   font 'Oxygen-Light.ttf'
   font 'Oxygen-Regular.ttf'

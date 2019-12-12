@@ -10,8 +10,6 @@ cask 'font-mate' do
   name 'Mate'
   homepage 'https://www.google.com/fonts/specimen/Mate'
 
-  depends_on macos: '>= :sierra'
-
   font 'Mate-Italic.ttf'
   font 'Mate-Regular.ttf'
 end

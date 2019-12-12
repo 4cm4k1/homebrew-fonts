@@ -9,8 +9,6 @@ cask 'font-inconsolata' do
   name 'Inconsolata'
   homepage 'http://levien.com/type/myfonts/inconsolata.html'
 
-  depends_on macos: '>= :sierra'
-
   font 'Inconsolata-Regular.ttf'
   font 'Inconsolata-Bold.ttf'
 end

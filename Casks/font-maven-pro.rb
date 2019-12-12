@@ -10,8 +10,6 @@ cask 'font-maven-pro' do
   name 'Maven Pro'
   homepage 'https://www.google.com/fonts/specimen/Maven%20Pro'
 
-  depends_on macos: '>= :sierra'
-
   font 'MavenPro-Black.ttf'
   font 'MavenPro-Bold.ttf'
   font 'MavenPro-Medium.ttf'

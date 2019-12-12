@@ -10,8 +10,6 @@ cask 'font-im-fell-english' do
   name 'IM Fell English'
   homepage 'https://www.google.com/fonts/specimen/IM%20Fell%20English'
 
-  depends_on macos: '>= :sierra'
-
   font 'IMFeENit28P.ttf'
   font 'IMFeENrm28P.ttf'
 end

@@ -10,8 +10,6 @@ cask 'font-radley' do
   name 'Radley'
   homepage 'https://www.google.com/fonts/specimen/Radley'
 
-  depends_on macos: '>= :sierra'
-
   font 'Radley-Italic.ttf'
   font 'Radley-Regular.ttf'
 end

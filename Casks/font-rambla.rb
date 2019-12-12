@@ -10,8 +10,6 @@ cask 'font-rambla' do
   name 'Rambla'
   homepage 'https://www.google.com/fonts/specimen/Rambla'
 
-  depends_on macos: '>= :sierra'
-
   font 'Rambla-Bold.ttf'
   font 'Rambla-BoldItalic.ttf'
   font 'Rambla-Italic.ttf'

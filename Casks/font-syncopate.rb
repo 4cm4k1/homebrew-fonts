@@ -10,8 +10,6 @@ cask 'font-syncopate' do
   name 'Syncopate'
   homepage 'https://www.google.com/fonts/specimen/Syncopate'
 
-  depends_on macos: '>= :sierra'
-
   font 'Syncopate-Bold.ttf'
   font 'Syncopate-Regular.ttf'
 end

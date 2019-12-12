@@ -10,8 +10,6 @@ cask 'font-karla-tamil-upright' do
   name 'Karla Tamil Upright'
   homepage 'https://www.google.com/fonts/earlyaccess'
 
-  depends_on macos: '>= :sierra'
-
   font 'KarlaTamilUpright-Bold.ttf'
   font 'KarlaTamilUpright-Regular.ttf'
 end

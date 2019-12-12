@@ -10,8 +10,6 @@ cask 'font-judson' do
   name 'Judson'
   homepage 'https://www.google.com/fonts/specimen/Judson'
 
-  depends_on macos: '>= :sierra'
-
   font 'Judson-Bold.ttf'
   font 'Judson-Italic.ttf'
   font 'Judson-Regular.ttf'

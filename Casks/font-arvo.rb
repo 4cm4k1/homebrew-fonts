@@ -10,8 +10,6 @@ cask 'font-arvo' do
   name 'Arvo'
   homepage 'https://www.google.com/fonts/specimen/Arvo'
 
-  depends_on macos: '>= :sierra'
-
   font 'Arvo-Bold.ttf'
   font 'Arvo-BoldItalic.ttf'
   font 'Arvo-Italic.ttf'

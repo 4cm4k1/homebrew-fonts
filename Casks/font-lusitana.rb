@@ -10,8 +10,6 @@ cask 'font-lusitana' do
   name 'Lusitana'
   homepage 'https://www.google.com/fonts/specimen/Lusitana'
 
-  depends_on macos: '>= :sierra'
-
   font 'Lusitana-Bold.ttf'
   font 'Lusitana-Regular.ttf'
 end

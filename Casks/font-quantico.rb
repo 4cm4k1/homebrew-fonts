@@ -10,8 +10,6 @@ cask 'font-quantico' do
   name 'Quantico'
   homepage 'https://www.google.com/fonts/specimen/Quantico'
 
-  depends_on macos: '>= :sierra'
-
   font 'Quantico-Bold.ttf'
   font 'Quantico-BoldItalic.ttf'
   font 'Quantico-Italic.ttf'

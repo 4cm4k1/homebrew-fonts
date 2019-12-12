@@ -10,8 +10,6 @@ cask 'font-hanuman' do
   name 'Hanuman'
   homepage 'https://www.google.com/fonts/specimen/Hanuman'
 
-  depends_on macos: '>= :sierra'
-
   font 'Hanuman.ttf'
   font 'Hanumanb.ttf'
 end

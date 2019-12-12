@@ -10,8 +10,6 @@ cask 'font-chivo' do
   name 'Chivo'
   homepage 'https://www.google.com/fonts/specimen/Chivo'
 
-  depends_on macos: '>= :sierra'
-
   font 'Chivo-Black.ttf'
   font 'Chivo-BlackItalic.ttf'
   font 'Chivo-Italic.ttf'

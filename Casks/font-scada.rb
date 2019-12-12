@@ -10,8 +10,6 @@ cask 'font-scada' do
   name 'Scada'
   homepage 'https://www.google.com/fonts/specimen/Scada'
 
-  depends_on macos: '>= :sierra'
-
   font 'Scada-Bold.ttf'
   font 'Scada-BoldItalic.ttf'
   font 'Scada-Italic.ttf'

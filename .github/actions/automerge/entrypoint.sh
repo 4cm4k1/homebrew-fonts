@@ -1,10 +1,5 @@
 #!/bin/sh
 
-echo "USER: $USER"
-echo "HOME: $HOME"
-
-mkdir -p ~/.cache
-
 set -e
 
 export HOMEBREW_GITHUB_ACTION="$GITHUB_ACTION"

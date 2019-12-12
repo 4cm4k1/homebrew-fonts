@@ -167,6 +167,10 @@ begin
       end
     end
 
+    puts "Merged PRs: #{merged_prs.count}"
+    puts "Skipped PRs: #{skipped_prs.count}"
+    puts "Failed PRs: #{failed_prs.count}"
+
     if (merged_prs + failed_prs).empty? && skipped_prs.any?
       skip
     elsif failed_prs.any?
@@ -175,6 +179,4 @@ begin
   else
     skip "Unsupported GitHub Actions event."
   end
-rescue NeutralSystemExit => e
-  puts e.message
 end

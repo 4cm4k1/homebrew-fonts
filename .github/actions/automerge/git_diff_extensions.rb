@@ -26,7 +26,7 @@ module GitDiffExtension
 
     def version_decreased?
       return false unless version_changed?
-      Version.parse(new_version) < Version.parse(old_version)
+      Version.new(new_version) < Version.new(old_version)
     end
 
     def old_version

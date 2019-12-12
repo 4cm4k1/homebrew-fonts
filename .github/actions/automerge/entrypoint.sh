@@ -1,9 +1,13 @@
 #!/bin/sh
 
-set -e
-
-# Override `/github/home` set by GitHub Actions.
 export HOME=/home/linuxbrew
+
+echo "USER: $USER"
+echo "HOME: $HOME"
+
+mkdir -p ~/.cache
+
+set -e
 
 export HOMEBREW_GITHUB_ACTION="$GITHUB_ACTION"
 export HOMEBREW_GITHUB_ACTOR="$GITHUB_ACTOR"

@@ -7,6 +7,8 @@ cask 'font-comic-sans-ms' do
   name 'Comic Sans'
   homepage 'http://sourceforge.net/projects/corefonts/files/the%20fonts/final/'
 
+  depends_on formula: 'cabextract'
+
   font 'Comicbd.TTF'
   font 'Comic.TTF'
 end

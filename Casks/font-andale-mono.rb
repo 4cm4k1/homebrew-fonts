@@ -4,7 +4,7 @@ cask 'font-andale-mono' do
 
   url 'https://downloads.sourceforge.net/corefonts/andale32.exe'
   name 'Andale Mono'
-  homepage 'https://sourceforge.net/projects/corefonts/files/the%20fonts/final/'
+  homepage 'http://sourceforge.net/projects/corefonts/files/the%20fonts/final/'
 
   font 'AndaleMo.TTF'
 end

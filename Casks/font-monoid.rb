@@ -6,7 +6,7 @@ cask 'font-monoid' do
   url 'https://github.com/larsenwork/monoid/blob/release/Monoid.zip?raw=true'
   appcast 'https://github.com/larsenwork/monoid/releases.atom'
   name 'Monoid'
-  homepage 'https://larsenwork.com/monoid/'
+  homepage 'http://larsenwork.com/monoid/'
 
   font 'Monoid-Bold.ttf'
   font 'Monoid-Italic.ttf'

@@ -2,9 +2,9 @@ cask 'font-conakry' do
   version :latest
   sha256 :no_check
 
-  url 'https://www.evertype.com/fonts/nko/ConakryFont.zip'
+  url 'http://www.evertype.com/fonts/nko/ConakryFont.zip'
   name 'Conakry'
-  homepage 'https://www.evertype.com/fonts/nko/'
+  homepage 'http://www.evertype.com/fonts/nko/'
 
   font 'ConakryFont/Conakry.ttf'
 end

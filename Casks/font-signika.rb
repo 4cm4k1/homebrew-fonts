@@ -2,9 +2,9 @@ cask 'font-signika' do
   version :latest
   sha256 :no_check
 
-  url 'https://fontfabric.com/downfont/signika.zip'
+  url 'http://fontfabric.com/downfont/signika.zip'
   name 'Signika'
-  homepage 'https://fontfabric.com/signika-font/'
+  homepage 'http://fontfabric.com/signika-font/'
 
   font 'Signika/Signika-Bold.ttf'
   font 'Signika/Signika-Light.ttf'

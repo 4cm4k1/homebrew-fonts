@@ -5,7 +5,7 @@ cask 'font-miao-unicode' do
   # github.com/phjamr/MiaoUnicode was verified as official when first introduced to the cask
   url 'https://github.com/phjamr/MiaoUnicode/blob/master/MiaoUnicode-Regular.ttf?raw=true'
   name 'MiaoUnicode'
-  homepage 'https://phjamr.github.io/miao.html'
+  homepage 'http://phjamr.github.io/miao.html'
 
   font 'MiaoUnicode-Regular.ttf'
 end

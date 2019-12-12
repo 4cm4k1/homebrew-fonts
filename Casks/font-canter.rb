@@ -2,9 +2,9 @@ cask 'font-canter' do
   version :latest
   sha256 :no_check
 
-  url 'https://fontfabric.com/downfont/canter.zip'
+  url 'http://fontfabric.com/downfont/canter.zip'
   name 'Canter'
-  homepage 'https://fontfabric.com/canter-free-font/'
+  homepage 'http://fontfabric.com/canter-free-font/'
 
   font 'Canter Bold.otf'
   font 'Canter Bold 3D.otf'

@@ -2,9 +2,9 @@ cask 'font-charter' do
   version :latest
   sha256 :no_check
 
-  url 'https://practicaltypography.com/fonts/charter.zip'
+  url 'http://practicaltypography.com/fonts/charter.zip'
   name 'Charter'
-  homepage 'https://practicaltypography.com/charter.html'
+  homepage 'http://practicaltypography.com/charter.html'
 
   font 'charter/otf/Charter Bold Italic.otf'
   font 'charter/otf/Charter Bold.otf'

@@ -2,9 +2,9 @@ cask 'font-pt-serif' do
   version :latest
   sha256 :no_check
 
-  url 'https://old.paratype.com/uni/public/PTSerif.zip'
+  url 'http://old.paratype.com/uni/public/PTSerif.zip'
   name 'PT Serif'
-  homepage 'https://www.paratype.com/public/'
+  homepage 'http://www.paratype.com/public/'
 
   font 'PTF55F.ttf'
   font 'PTF56F.ttf'

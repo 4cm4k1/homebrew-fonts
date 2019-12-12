@@ -6,7 +6,7 @@ cask 'font-material-icons' do
   url "https://github.com/google/material-design-icons/archive/#{version}.zip"
   appcast 'https://github.com/google/material-design-icons/releases.atom'
   name 'Material Icons'
-  homepage 'https://google.github.io/material-design-icons/'
+  homepage 'http://google.github.io/material-design-icons/'
 
   font "material-design-icons-#{version}/iconfont/MaterialIcons-Regular.ttf"
 end

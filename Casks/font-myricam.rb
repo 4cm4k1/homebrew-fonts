@@ -6,7 +6,7 @@ cask 'font-myricam' do
   url "https://codeload.github.com/tomokuni/Myrica/zip/#{version}"
   appcast 'https://github.com/tomokuni/Myrica/releases.atom'
   name 'MyricaM'
-  homepage 'https://myrica.estable.jp/'
+  homepage 'http://myrica.estable.jp/'
 
   font "Myrica-#{version}/MyricaM.TTC"
 end

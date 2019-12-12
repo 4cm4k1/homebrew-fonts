@@ -2,9 +2,9 @@ cask 'font-aileron' do
   version :latest
   sha256 :no_check
 
-  url 'https://dotcolon.net/DL/font/aileron.zip'
+  url 'http://dotcolon.net/DL/font/aileron.zip'
   name 'Aileron'
-  homepage 'https://dotcolon.net/font/aileron/'
+  homepage 'http://dotcolon.net/font/aileron/'
 
   font 'Aileron-Black.otf'
   font 'Aileron-BlackItalic.otf'

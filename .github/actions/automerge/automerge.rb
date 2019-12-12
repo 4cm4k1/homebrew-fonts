@@ -134,6 +134,7 @@ CASK_REPOS = [
   "Homebrew/homebrew-cask-versions",
 ].freeze
 
+ ENV["GITHUB_EVENT_NAME"] = "push"
 begin
   case ENV["GITHUB_EVENT_NAME"]
   when "status"
@@ -159,7 +160,6 @@ begin
         skipped_prs << pr
       rescue => e
         $stderr.puts e
-        $stderr.puts e.backtrace
         failed_prs << pr
       end
     end

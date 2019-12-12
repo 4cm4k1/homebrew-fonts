@@ -56,6 +56,7 @@ workflow "Sync labels." {
 }
 
 action "sync_labels" {
+  needs = ["master"]
   uses = "./.github/actions/sync"
   args = "/labels.rb"
   secrets = ["HOMEBREW_GITHUB_API_TOKEN"]

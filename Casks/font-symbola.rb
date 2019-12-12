@@ -6,5 +6,5 @@ cask 'font-symbola' do
   name 'Symbola'
   homepage 'http://users.teilar.gr/~g1951d/'
 
-  font 'Symbola_Hinted.ttf'
+  font 'Symbola_hint.ttf'
 end

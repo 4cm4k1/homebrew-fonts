@@ -4,7 +4,8 @@ cask 'font-gilbert' do
 
   # github.com/Fontself/TypeWithPride was verified as official when first introduced to the cask
   url "https://github.com/Fontself/TypeWithPride/releases/download/#{version.before_comma}/Gilbert_#{version.before_comma}_#{version.after_comma}.zip"
-  appcast 'https://github.com/Fontself/TypeWithPride/releases.atom'
+  appcast 'https://github.com/Fontself/TypeWithPride/releases.atom',
+          checkpoint: 'a66b7331a823c0d2dc1762b92115451e9dd9749204ab0d25a21d4c6fd6b9019c'
   name 'Gilbert'
   homepage 'https://typewithpride.com/'
 

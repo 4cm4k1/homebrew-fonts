@@ -4,7 +4,8 @@ cask 'font-hack' do
 
   # github.com/source-foundry/Hack was verified as official when first introduced to the cask
   url "https://github.com/source-foundry/Hack/releases/download/v#{version}/Hack-v#{version}-ttf.zip"
-  appcast 'https://github.com/source-foundry/Hack/releases.atom'
+  appcast 'https://github.com/source-foundry/Hack/releases.atom',
+          checkpoint: '3d31ceb7d126c8b796727ce533127c09203b7e5c6685e8158094f84a94989ec1'
   name 'Hack'
   homepage 'http://sourcefoundry.org/hack/'
 

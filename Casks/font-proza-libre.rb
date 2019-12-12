@@ -3,7 +3,8 @@ cask 'font-proza-libre' do
   sha256 'cbd3bb929d905330ad9e2d4b2efc3edf5c351eb5b4a238bd87367e74836fa9c9'
 
   url "https://github.com/jasperdewaard/Proza-Libre/archive/#{version}.zip"
-  appcast 'https://github.com/jasperdewaard/Proza-Libre/releases.atom'
+  appcast 'https://github.com/jasperdewaard/Proza-Libre/releases.atom',
+          checkpoint: 'b70142a06078acb0ff1050c4ff3f02b03387a6200485d07263e45f80b616b184'
   name 'Proza Libre'
   homepage 'https://github.com/jasperdewaard/Proza-Libre'
 

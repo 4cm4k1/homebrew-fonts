@@ -4,7 +4,8 @@ cask 'font-fira-sans' do
 
   # github.com/mozilla/Fira was verified as official when first introduced to the cask
   url "https://github.com/mozilla/Fira/archive/#{version}.tar.gz"
-  appcast 'https://github.com/mozilla/Fira/releases.atom'
+  appcast 'https://github.com/mozilla/Fira/releases.atom',
+          checkpoint: 'e9adcc031c4192b0568b7aeca92bd87c1ab8dc14b25cb9a57c43e89dc95efaa5'
   name 'Fira Sans'
   homepage 'https://mozilla.github.io/Fira/'
 

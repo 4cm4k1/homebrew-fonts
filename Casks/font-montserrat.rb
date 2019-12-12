@@ -3,7 +3,8 @@ cask 'font-montserrat' do
   sha256 '81b2c8f0148d6acf62b59f78869ad7eff28adcd9d19cddec4777d482df5dcd71'
 
   url "https://github.com/JulietaUla/Montserrat/archive/v#{version}.zip"
-  appcast 'https://github.com/JulietaUla/Montserrat/releases.atom'
+  appcast 'https://github.com/JulietaUla/Montserrat/releases.atom',
+          checkpoint: '4b318877797f475bbecf4879d4b860f6395ab136733d80b8c91a6ef61cfc1f0d'
   name 'Montserrat'
   homepage 'https://github.com/JulietaUla/Montserrat'
 

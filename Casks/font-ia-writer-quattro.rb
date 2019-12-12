@@ -3,7 +3,7 @@ cask 'font-ia-writer-quattro' do
   sha256 :no_check
 
   url 'https://codeload.github.com/iaolo/iA-Fonts/zip/master'
-  name 'iA Writer Quattro'
+  name 'iA Writer Duospace'
   homepage 'https://github.com/iaolo/iA-Fonts'
 
   font 'iA-Fonts-master/iA Writer Quattro/Static/iAWriterQuattroS-Bold.ttf'

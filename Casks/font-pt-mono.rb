@@ -2,7 +2,7 @@ cask 'font-pt-mono' do
   version :latest
   sha256 :no_check
 
-  url 'https://company.paratype.com/system/attachments/631/original/ptmono.zip'
+  url 'https://old.paratype.com/uni/public/PTMono.zip'
   name 'PT Mono'
   homepage 'https://www.paratype.com/public/'
 

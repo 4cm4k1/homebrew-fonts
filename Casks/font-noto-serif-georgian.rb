@@ -1,12 +1,11 @@
-cask 'font-noto-serif-georgian' do
+cask "font-noto-serif-georgian" do
   version :latest
   sha256 :no_check
 
-  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
-  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSerifGeorgian-unhinted.zip'
-  name 'Noto Serif Georgian'
-  homepage 'https://www.google.com/get/noto/#serif-geor'
+  url "https://github.com/google/fonts/raw/main/ofl/notoserifgeorgian/NotoSerifGeorgian%5Bwdth%2Cwght%5D.ttf",
+      verified: "github.com/google/fonts/"
+  name "Noto Serif Georgian"
+  homepage "https://fonts.google.com/specimen/Noto+Serif+Georgian"
 
-  font 'NotoSerifGeorgian-Bold.ttf'
-  font 'NotoSerifGeorgian-Regular.ttf'
+  font "NotoSerifGeorgian[wdth,wght].ttf"
 end

@@ -1,11 +1,11 @@
-cask 'font-kdam-thmor' do
+cask "font-kdam-thmor" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/kdamthmor/KdamThmor-Regular.ttf'
-  name 'Kdam Thmor'
-  homepage 'http://www.google.com/fonts/specimen/Kdam+Thmor'
+  url "https://github.com/google/fonts/raw/main/ofl/kdamthmor/KdamThmor-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Kdam Thmor"
+  homepage "https://fonts.google.com/specimen/Kdam+Thmor"
 
-  font 'KdamThmor-Regular.ttf'
+  font "KdamThmor-Regular.ttf"
 end

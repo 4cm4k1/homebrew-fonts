@@ -1,11 +1,11 @@
-cask 'font-noto-sans-meetei-mayek' do
+cask "font-noto-sans-meetei-mayek" do
   version :latest
   sha256 :no_check
 
-  # noto-website.storage.googleapis.com was verified as official when first introduced to the cask
-  url 'https://noto-website.storage.googleapis.com/pkgs/NotoSansMeeteiMayek-unhinted.zip'
-  name 'Noto Sans Meetei Mayek'
-  homepage 'https://www.google.com/get/noto/#sans-mtei'
+  url "https://github.com/google/fonts/raw/main/ofl/notosansmeeteimayek/NotoSansMeeteiMayek%5Bwght%5D.ttf",
+      verified: "github.com/google/fonts/"
+  name "Noto Sans Meetei Mayek"
+  homepage "https://fonts.google.com/specimen/Noto+Sans+Meetei+Mayek"
 
-  font 'NotoSansMeeteiMayek-Regular.ttf'
+  font "NotoSansMeeteiMayek[wght].ttf"
 end

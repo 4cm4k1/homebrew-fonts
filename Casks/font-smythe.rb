@@ -1,11 +1,11 @@
-cask 'font-smythe' do
+cask "font-smythe" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/smythe/Smythe-Regular.ttf'
-  name 'Smythe'
-  homepage 'http://www.google.com/fonts/specimen/Smythe'
+  url "https://github.com/google/fonts/raw/main/ofl/smythe/Smythe-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Smythe"
+  homepage "https://fonts.google.com/specimen/Smythe"
 
-  font 'Smythe-Regular.ttf'
+  font "Smythe-Regular.ttf"
 end

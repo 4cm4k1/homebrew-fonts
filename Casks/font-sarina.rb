@@ -1,11 +1,11 @@
-cask 'font-sarina' do
+cask "font-sarina" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/sarina/Sarina-Regular.ttf'
-  name 'Sarina'
-  homepage 'http://www.google.com/fonts/specimen/Sarina'
+  url "https://github.com/google/fonts/raw/main/ofl/sarina/Sarina-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Sarina"
+  homepage "https://fonts.google.com/specimen/Sarina"
 
-  font 'Sarina-Regular.ttf'
+  font "Sarina-Regular.ttf"
 end

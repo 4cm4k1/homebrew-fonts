@@ -1,11 +1,11 @@
-cask 'font-rye' do
+cask "font-rye" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/rye/Rye-Regular.ttf'
-  name 'Rye'
-  homepage 'http://www.google.com/fonts/specimen/Rye'
+  url "https://github.com/google/fonts/raw/main/ofl/rye/Rye-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Rye"
+  homepage "https://fonts.google.com/specimen/Rye"
 
-  font 'Rye-Regular.ttf'
+  font "Rye-Regular.ttf"
 end

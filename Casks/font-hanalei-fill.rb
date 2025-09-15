@@ -1,11 +1,11 @@
-cask 'font-hanalei-fill' do
+cask "font-hanalei-fill" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/hanaleifill/HanaleiFill-Regular.ttf'
-  name 'Hanalei Fill'
-  homepage 'http://www.google.com/fonts/specimen/Hanalei+Fill'
+  url "https://github.com/google/fonts/raw/main/ofl/hanaleifill/HanaleiFill-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Hanalei Fill"
+  homepage "https://fonts.google.com/specimen/Hanalei+Fill"
 
-  font 'HanaleiFill-Regular.ttf'
+  font "HanaleiFill-Regular.ttf"
 end

@@ -1,15 +1,13 @@
-cask 'font-syncopate' do
+cask "font-syncopate" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/apache/syncopate',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Syncopate'
-  homepage 'http://www.google.com/fonts/specimen/Syncopate'
+  url "https://github.com/google/fonts/trunk/apache/syncopate",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Syncopate"
+  homepage "https://fonts.google.com/specimen/Syncopate"
 
-  font 'Syncopate-Bold.ttf'
-  font 'Syncopate-Regular.ttf'
+  font "Syncopate-Bold.ttf"
+  font "Syncopate-Regular.ttf"
 end

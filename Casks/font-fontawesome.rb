@@ -1,13 +1,14 @@
-cask 'font-fontawesome' do
-  version '4.7.0'
-  sha256 '35d79ae86c8d4fd0f931843ec969191700940875bb941044a4c860eb200f166c'
+cask "font-fontawesome" do
+  version "6.1.1"
+  sha256 "73366012c82155f4ba78e842d15f5e49597bb21320d85c63ea984d788791b267"
 
-  # github.com/FortAwesome/Font-Awesome was verified as official when first introduced to the cask
-  url "https://github.com/FortAwesome/Font-Awesome/archive/v#{version}.zip"
-  appcast 'https://github.com/FortAwesome/Font-Awesome/releases.atom',
-          checkpoint: 'fa1e9fdd7a074dc2d844c8a23a2145362983b63e2340d5e066902e49f8071327'
-  name 'Font Awesome'
-  homepage 'http://fontawesome.io/'
+  url "https://github.com/FortAwesome/Font-Awesome/releases/download/#{version}/fontawesome-free-#{version}-desktop.zip",
+      verified: "github.com/FortAwesome/Font-Awesome/"
+  name "Font Awesome"
+  desc "Icon set and toolkit"
+  homepage "https://fontawesome.com/"
 
-  font "Font-Awesome-#{version}/fonts/FontAwesome.otf"
+  font "fontawesome-free-#{version}-desktop/otfs/Font Awesome #{version.major} Brands-Regular-400.otf"
+  font "fontawesome-free-#{version}-desktop/otfs/Font Awesome #{version.major} Free-Regular-400.otf"
+  font "fontawesome-free-#{version}-desktop/otfs/Font Awesome #{version.major} Free-Solid-900.otf"
 end

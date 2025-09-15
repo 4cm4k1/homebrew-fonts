@@ -1,11 +1,11 @@
-cask 'font-bigelow-rules' do
+cask "font-bigelow-rules" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/bigelowrules/BigelowRules-Regular.ttf'
-  name 'Bigelow Rules'
-  homepage 'http://www.google.com/fonts/specimen/Bigelow+Rules'
+  url "https://github.com/google/fonts/raw/main/ofl/bigelowrules/BigelowRules-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Bigelow Rules"
+  homepage "https://fonts.google.com/specimen/Bigelow+Rules"
 
-  font 'BigelowRules-Regular.ttf'
+  font "BigelowRules-Regular.ttf"
 end

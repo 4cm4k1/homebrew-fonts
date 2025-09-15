@@ -1,17 +1,21 @@
-cask 'font-xits' do
-  version '1.108'
-  sha256 'af5e3eee5c81578810a7f2ffbf4c985d25e879e0128ea1dd6c1389a06eb36347'
+cask "font-xits" do
+  version "1.302"
+  sha256 "afb3e0804985bc8ab822e9cfc2a94706383491e7f5f56ccdca04909f30688fb0"
 
-  url "https://github.com/khaledhosny/xits-math/archive/v#{version}.zip"
-  appcast 'https://github.com/khaledhosny/xits-math/releases.atom',
-          checkpoint: 'b95fbba398884408c293eba5cb6e1e556f0c337db397dd39f20d700634c0e287'
-  name 'XITS'
-  homepage 'https://github.com/khaledhosny/xits-math'
+  url "https://github.com/khaledhosny/xits/archive/v#{version}.zip"
+  appcast "https://github.com/khaledhosny/xits/releases.atom"
+  name "XITS"
+  desc "Times-like typeface for mathematical and scientific publishing"
+  homepage "https://github.com/khaledhosny/xits"
 
-  font "xits-math-#{version}/xits-bold.otf"
-  font "xits-math-#{version}/xits-bolditalic.otf"
-  font "xits-math-#{version}/xits-italic.otf"
-  font "xits-math-#{version}/xits-math.otf"
-  font "xits-math-#{version}/xits-mathbold.otf"
-  font "xits-math-#{version}/xits-regular.otf"
+  font "xits-#{version}/xits-bold.otf"
+  font "xits-#{version}/xits-bolditalic.otf"
+  font "xits-#{version}/xits-italic.otf"
+  font "xits-#{version}/xits-regular.otf"
+  font "xits-#{version}/xitsmath-bold.otf"
+  font "xits-#{version}/xitsmath-regular.otf"
+
+  caveats do
+    discontinued
+  end
 end

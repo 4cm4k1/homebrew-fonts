@@ -1,11 +1,11 @@
-cask 'font-tenor-sans' do
+cask "font-tenor-sans" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/tenorsans/TenorSans-Regular.ttf'
-  name 'Tenor Sans'
-  homepage 'http://www.google.com/fonts/specimen/Tenor+Sans'
+  url "https://github.com/google/fonts/raw/main/ofl/tenorsans/TenorSans-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Tenor Sans"
+  homepage "https://fonts.google.com/specimen/Tenor+Sans"
 
-  font 'TenorSans-Regular.ttf'
+  font "TenorSans-Regular.ttf"
 end

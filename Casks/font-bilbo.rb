@@ -1,11 +1,11 @@
-cask 'font-bilbo' do
+cask "font-bilbo" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/bilbo/Bilbo-Regular.ttf'
-  name 'Bilbo'
-  homepage 'http://www.google.com/fonts/specimen/Bilbo'
+  url "https://github.com/google/fonts/raw/main/ofl/bilbo/Bilbo-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Bilbo"
+  homepage "https://fonts.google.com/specimen/Bilbo"
 
-  font 'Bilbo-Regular.ttf'
+  font "Bilbo-Regular.ttf"
 end

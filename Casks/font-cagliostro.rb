@@ -1,11 +1,11 @@
-cask 'font-cagliostro' do
+cask "font-cagliostro" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/cagliostro/Cagliostro-Regular.ttf'
-  name 'Cagliostro'
-  homepage 'http://www.google.com/fonts/specimen/Cagliostro'
+  url "https://github.com/google/fonts/raw/main/ofl/cagliostro/Cagliostro-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Cagliostro"
+  homepage "https://fonts.google.com/specimen/Cagliostro"
 
-  font 'Cagliostro-Regular.ttf'
+  font "Cagliostro-Regular.ttf"
 end

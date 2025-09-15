@@ -1,18 +1,23 @@
-cask 'font-source-serif-pro' do
-  version '2.000R'
-  sha256 '2094c6a07953f8877c6a0ce160b0b7d5ec394fc3b19c67d301173d0a94a928c1'
+cask "font-source-serif-pro" do
+  version :latest
+  sha256 :no_check
 
-  # github.com/adobe-fonts/source-serif-pro was verified as official when first introduced to the cask
-  url "https://github.com/adobe-fonts/source-serif-pro/archive/#{version}.zip"
-  appcast 'https://github.com/adobe-fonts/source-serif-pro/releases.atom',
-          checkpoint: '1caefcf0b3d20b05b64beb802e872ba535d7cc59ea007449eb4e1d25cfcc9edb'
-  name 'Source Serif Pro'
-  homepage 'https://adobe-fonts.github.io/source-serif-pro/'
+  url "https://github.com/google/fonts/trunk/ofl/sourceserifpro",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Source Serif Pro"
+  homepage "https://fonts.google.com/specimen/Source+Serif+Pro"
 
-  font "source-serif-pro-#{version}/OTF/SourceSerifPro-Black.otf"
-  font "source-serif-pro-#{version}/OTF/SourceSerifPro-Bold.otf"
-  font "source-serif-pro-#{version}/OTF/SourceSerifPro-ExtraLight.otf"
-  font "source-serif-pro-#{version}/OTF/SourceSerifPro-Light.otf"
-  font "source-serif-pro-#{version}/OTF/SourceSerifPro-Regular.otf"
-  font "source-serif-pro-#{version}/OTF/SourceSerifPro-Semibold.otf"
+  font "SourceSerifPro-Black.ttf"
+  font "SourceSerifPro-BlackItalic.ttf"
+  font "SourceSerifPro-Bold.ttf"
+  font "SourceSerifPro-BoldItalic.ttf"
+  font "SourceSerifPro-ExtraLight.ttf"
+  font "SourceSerifPro-ExtraLightItalic.ttf"
+  font "SourceSerifPro-Italic.ttf"
+  font "SourceSerifPro-Light.ttf"
+  font "SourceSerifPro-LightItalic.ttf"
+  font "SourceSerifPro-Regular.ttf"
+  font "SourceSerifPro-SemiBold.ttf"
+  font "SourceSerifPro-SemiBoldItalic.ttf"
 end

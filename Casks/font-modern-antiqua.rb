@@ -1,11 +1,11 @@
-cask 'font-modern-antiqua' do
+cask "font-modern-antiqua" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/modernantiqua/ModernAntiqua-Regular.ttf'
-  name 'Modern Antiqua'
-  homepage 'http://www.google.com/fonts/specimen/Modern+Antiqua'
+  url "https://github.com/google/fonts/raw/main/ofl/modernantiqua/ModernAntiqua-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Modern Antiqua"
+  homepage "https://fonts.google.com/specimen/Modern+Antiqua"
 
-  font 'ModernAntiqua-Regular.ttf'
+  font "ModernAntiqua-Regular.ttf"
 end

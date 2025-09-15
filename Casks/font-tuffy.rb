@@ -1,13 +1,15 @@
-cask 'font-tuffy' do
-  version '20120614'
-  sha256 'c6f9eb7a878e270b96fbb5dae7783be29710b4405c76e856de60dcfc96386e0b'
+cask "font-tuffy" do
+  version :latest
+  sha256 :no_check
 
-  url "http://tulrich.com/fonts/tuffy-#{version}.tar.gz"
-  name 'Tuffy'
-  homepage 'http://tulrich.com/fonts/'
+  url "https://github.com/google/fonts/trunk/ofl/tuffy",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Tuffy"
+  homepage "https://fonts.google.com/specimen/Tuffy"
 
-  font "tuffy-#{version}/Tuffy.otf"
-  font "tuffy-#{version}/Tuffy_Bold.otf"
-  font "tuffy-#{version}/Tuffy_Bold_Italic.otf"
-  font "tuffy-#{version}/Tuffy_Italic.otf"
+  font "Tuffy-Bold.ttf"
+  font "Tuffy-BoldItalic.ttf"
+  font "Tuffy-Italic.ttf"
+  font "Tuffy-Regular.ttf"
 end

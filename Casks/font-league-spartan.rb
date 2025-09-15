@@ -1,10 +1,21 @@
-cask 'font-league-spartan' do
-  version 'c350408b07'
-  sha256 'a166294a7e156a0eb14df5714acfeeb3ad4db01eab2bc88f961695da917337fd'
+cask "font-league-spartan" do
+  version "2.220"
+  sha256 "141a96e215554871504dca16be159901bbb0d56f3a84224f39fe472c7ab4ef47"
 
-  url "http://files.theleagueofmoveabletype.com/downloads/league-spartan-#{version}.zip"
-  name 'League Spartan'
-  homepage 'https://www.theleagueofmoveabletype.com/league-spartan'
+  url "https://github.com/theleagueof/league-spartan/releases/download/#{version}/LeagueSpartan-#{version}.tar.xz",
+      verified: "github.com/theleagueof/league-spartan/"
+  appcast "https://github.com/theleagueof/league-spartan/releases.atom"
+  name "League Spartan"
+  desc "Geometric sans-serif revival of ATF’s classic Spartan"
+  homepage "https://www.theleagueofmoveabletype.com/league-spartan"
 
-  font 'league-spartan-master/LeagueSpartan-Bold.otf'
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-ExtraLight.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-Light.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-Medium.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-Regular.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-SemiBold.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-Bold.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-ExtraBold.otf"
+  font "LeagueSpartan-#{version}/static/OTF/LeagueSpartan-Black.otf"
+  font "LeagueSpartan-#{version}/variable/TTF/LeagueSpartan-VF.ttf"
 end

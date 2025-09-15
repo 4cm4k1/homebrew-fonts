@@ -1,11 +1,13 @@
-cask 'font-bevan' do
+cask "font-bevan" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/bevan/Bevan-Regular.ttf'
-  name 'Bevan'
-  homepage 'http://www.google.com/fonts/specimen/Bevan'
+  url "https://github.com/google/fonts/trunk/ofl/bevan",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Bevan"
+  homepage "https://fonts.google.com/specimen/Bevan"
 
-  font 'Bevan-Regular.ttf'
+  font "Bevan-Italic.ttf"
+  font "Bevan-Regular.ttf"
 end

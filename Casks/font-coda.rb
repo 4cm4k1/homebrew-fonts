@@ -1,15 +1,13 @@
-cask 'font-coda' do
+cask "font-coda" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/coda',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Coda'
-  homepage 'http://www.google.com/fonts/specimen/Coda'
+  url "https://github.com/google/fonts/trunk/ofl/coda",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Coda"
+  homepage "https://fonts.google.com/specimen/Coda"
 
-  font 'Coda-Heavy.ttf'
-  font 'Coda-Regular.ttf'
+  font "Coda-ExtraBold.ttf"
+  font "Coda-Regular.ttf"
 end

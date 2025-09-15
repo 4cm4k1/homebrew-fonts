@@ -1,11 +1,11 @@
-cask 'font-nova-square' do
+cask "font-nova-square" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/novasquare/NovaSquare.ttf'
-  name 'Nova Square'
-  homepage 'http://www.google.com/fonts/specimen/Nova%20Square'
+  url "https://github.com/google/fonts/raw/main/ofl/novasquare/NovaSquare.ttf",
+      verified: "github.com/google/fonts/"
+  name "Nova Square"
+  homepage "https://fonts.google.com/specimen/Nova+Square"
 
-  font 'NovaSquare.ttf'
+  font "NovaSquare.ttf"
 end

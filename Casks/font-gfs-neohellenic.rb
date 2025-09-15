@@ -1,17 +1,15 @@
-cask 'font-gfs-neohellenic' do
+cask "font-gfs-neohellenic" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/gfsneohellenic',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'GFS Neohellenic'
-  homepage 'http://www.google.com/fonts/specimen/GFS%20Neohellenic'
+  url "https://github.com/google/fonts/trunk/ofl/gfsneohellenic",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "GFS Neohellenic"
+  homepage "https://fonts.google.com/specimen/GFS+Neohellenic"
 
-  font 'GFSNeohellenic.ttf'
-  font 'GFSNeohellenicBold.ttf'
-  font 'GFSNeohellenicBoldItalic.ttf'
-  font 'GFSNeohellenicItalic.ttf'
+  font "GFSNeohellenic.ttf"
+  font "GFSNeohellenicBold.ttf"
+  font "GFSNeohellenicBoldItalic.ttf"
+  font "GFSNeohellenicItalic.ttf"
 end

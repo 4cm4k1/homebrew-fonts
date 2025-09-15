@@ -1,11 +1,11 @@
-cask 'font-luckiest-guy' do
+cask "font-luckiest-guy" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/apache/luckiestguy/LuckiestGuy.ttf'
-  name 'Luckiest Guy'
-  homepage 'http://www.google.com/fonts/specimen/Luckiest+Guy'
+  url "https://github.com/google/fonts/raw/main/apache/luckiestguy/LuckiestGuy-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Luckiest Guy"
+  homepage "https://fonts.google.com/specimen/Luckiest+Guy"
 
-  font 'LuckiestGuy.ttf'
+  font "LuckiestGuy-Regular.ttf"
 end

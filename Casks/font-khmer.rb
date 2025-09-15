@@ -1,11 +1,11 @@
-cask 'font-khmer' do
+cask "font-khmer" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/khmer/Khmer.ttf'
-  name 'Khmer'
-  homepage 'http://www.google.com/fonts/specimen/Khmer'
+  url "https://github.com/google/fonts/raw/main/ofl/khmer/Khmer.ttf",
+      verified: "github.com/google/fonts/"
+  name "Khmer"
+  homepage "https://fonts.google.com/specimen/Khmer"
 
-  font 'Khmer.ttf'
+  font "Khmer.ttf"
 end

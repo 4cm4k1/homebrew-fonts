@@ -1,15 +1,13 @@
-cask 'font-dhyana' do
+cask "font-dhyana" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/dhyana',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Dhyana'
-  homepage 'https://www.google.com/fonts/earlyaccess'
+  url "https://github.com/google/fonts/trunk/ofl/dhyana",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Dhyana"
+  homepage "https://fonts.google.com/specimen/Dhyana"
 
-  font 'Dhyana-Bold.ttf'
-  font 'Dhyana-Regular.ttf'
+  font "Dhyana-Bold.ttf"
+  font "Dhyana-Regular.ttf"
 end

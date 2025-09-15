@@ -1,11 +1,11 @@
-cask 'font-oranienbaum' do
+cask "font-oranienbaum" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/oranienbaum/Oranienbaum-Regular.ttf'
-  name 'Oranienbaum'
-  homepage 'http://www.google.com/fonts/specimen/Oranienbaum'
+  url "https://github.com/google/fonts/raw/main/ofl/oranienbaum/Oranienbaum-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Oranienbaum"
+  homepage "https://fonts.google.com/specimen/Oranienbaum"
 
-  font 'Oranienbaum-Regular.ttf'
+  font "Oranienbaum-Regular.ttf"
 end

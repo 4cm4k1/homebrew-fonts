@@ -1,15 +1,17 @@
-cask 'font-aleo' do
-  version '1.2.2'
-  sha256 '64e98e1063da945086b4685535f0b3d463efbc1409e18bddf925624bf27b7e57'
+cask "font-aleo" do
+  version :latest
+  sha256 :no_check
 
-  url 'http://fontfabric.com/downfont/aleo.zip'
-  name 'Aleo'
-  homepage 'http://fontfabric.com/aleo-free-font/'
+  url "https://github.com/google/fonts/trunk/ofl/aleo",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Aleo"
+  homepage "https://fonts.google.com/specimen/Aleo"
 
-  font 'Aleo_font_v1.2.2/Desktop OTF/Aleo-Bold.otf'
-  font 'Aleo_font_v1.2.2/Desktop OTF/Aleo-BoldItalic.otf'
-  font 'Aleo_font_v1.2.2/Desktop OTF/Aleo-Italic.otf'
-  font 'Aleo_font_v1.2.2/Desktop OTF/Aleo-Light.otf'
-  font 'Aleo_font_v1.2.2/Desktop OTF/Aleo-LightItalic.otf'
-  font 'Aleo_font_v1.2.2/Desktop OTF/Aleo-Regular.otf'
+  font "Aleo-Bold.ttf"
+  font "Aleo-BoldItalic.ttf"
+  font "Aleo-Italic.ttf"
+  font "Aleo-Light.ttf"
+  font "Aleo-LightItalic.ttf"
+  font "Aleo-Regular.ttf"
 end

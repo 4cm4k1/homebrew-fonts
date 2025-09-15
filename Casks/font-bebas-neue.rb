@@ -1,14 +1,11 @@
-cask 'font-bebas-neue' do
+cask "font-bebas-neue" do
   version :latest
   sha256 :no_check
 
-  url 'http://fontfabric.com/downfont/bebas.zip'
-  name 'Bebas Neue'
-  homepage 'http://fontfabric.com/bebas-neue/'
+  url "https://github.com/google/fonts/raw/main/ofl/bebasneue/BebasNeue-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Bebas Neue"
+  homepage "https://fonts.google.com/specimen/Bebas+Neue"
 
-  font 'BebasNeue Bold.otf'
-  font 'BebasNeue Book.otf'
-  font 'BebasNeue Light.otf'
-  font 'BebasNeue Regular.otf'
-  font 'BebasNeue Thin.otf'
+  font "BebasNeue-Regular.ttf"
 end

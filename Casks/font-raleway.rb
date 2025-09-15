@@ -1,31 +1,32 @@
-cask 'font-raleway' do
-  version :latest
-  sha256 :no_check
+cask "font-raleway" do
+  version "4.101"
+  sha256 "523070d32418b4223e79f4629bf28b935723906d156d2e6af016e6a34fe6d3eb"
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/raleway',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Raleway'
-  homepage 'http://www.google.com/fonts/specimen/Raleway'
+  url "https://github.com/theleagueof/raleway/releases/download/#{version}/Raleway-#{version}.tar.xz",
+      verified: "github.com/theleagueof/raleway/"
+  appcast "https://github.com/theleagueof/raleway/releases.atom"
+  name "Raleway"
+  desc "Elegant sans-serif font family, now 9 weights and italic style"
+  homepage "https://www.theleagueofmoveabletype.com/raleway"
 
-  font 'Raleway-Black.ttf'
-  font 'Raleway-BlackItalic.ttf'
-  font 'Raleway-Bold.ttf'
-  font 'Raleway-BoldItalic.ttf'
-  font 'Raleway-ExtraBold.ttf'
-  font 'Raleway-ExtraBoldItalic.ttf'
-  font 'Raleway-ExtraLight.ttf'
-  font 'Raleway-ExtraLightItalic.ttf'
-  font 'Raleway-Italic.ttf'
-  font 'Raleway-Light.ttf'
-  font 'Raleway-LightItalic.ttf'
-  font 'Raleway-Medium.ttf'
-  font 'Raleway-MediumItalic.ttf'
-  font 'Raleway-Regular.ttf'
-  font 'Raleway-SemiBold.ttf'
-  font 'Raleway-SemiBoldItalic.ttf'
-  font 'Raleway-Thin.ttf'
-  font 'Raleway-ThinItalic.ttf'
+  font "Raleway-#{version}/static/OTF/Raleway-Thin.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-ExtraLight.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-Light.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-Medium.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-Regular.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-SemiBold.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-Bold.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-ExtraBold.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-Black.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-ThinItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-ExtraLightItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-LightItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-Italic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-MediumItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-SemiBoldItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-BoldItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-ExtraBoldItalic.otf"
+  font "Raleway-#{version}/static/OTF/Raleway-BlackItalic.otf"
+  font "Raleway-#{version}/variable/TTF/Raleway-VF.ttf"
+  font "Raleway-#{version}/variable/TTF/Raleway-Italic-VF.ttf"
 end

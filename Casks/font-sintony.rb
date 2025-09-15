@@ -1,15 +1,13 @@
-cask 'font-sintony' do
+cask "font-sintony" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/sintony',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Sintony'
-  homepage 'http://www.google.com/fonts/specimen/Sintony'
+  url "https://github.com/google/fonts/trunk/ofl/sintony",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Sintony"
+  homepage "https://fonts.google.com/specimen/Sintony"
 
-  font 'Sintony-Bold.ttf'
-  font 'Sintony-Regular.ttf'
+  font "Sintony-Bold.ttf"
+  font "Sintony-Regular.ttf"
 end

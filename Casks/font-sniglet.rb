@@ -1,15 +1,13 @@
-cask 'font-sniglet' do
+cask "font-sniglet" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/sniglet',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Sniglet'
-  homepage 'http://www.google.com/fonts/specimen/Sniglet'
+  url "https://github.com/google/fonts/trunk/ofl/sniglet",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Sniglet"
+  homepage "https://fonts.google.com/specimen/Sniglet"
 
-  font 'Sniglet-ExtraBold.ttf'
-  font 'Sniglet-Regular.ttf'
+  font "Sniglet-ExtraBold.ttf"
+  font "Sniglet-Regular.ttf"
 end

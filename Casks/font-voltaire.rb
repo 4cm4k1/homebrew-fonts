@@ -1,11 +1,11 @@
-cask 'font-voltaire' do
+cask "font-voltaire" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/voltaire/Voltaire-Regular.ttf'
-  name 'Voltaire'
-  homepage 'http://www.google.com/fonts/specimen/Voltaire'
+  url "https://github.com/google/fonts/raw/main/ofl/voltaire/Voltaire-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Voltaire"
+  homepage "https://fonts.google.com/specimen/Voltaire"
 
-  font 'Voltaire-Regular.ttf'
+  font "Voltaire-Regular.ttf"
 end

@@ -1,11 +1,11 @@
-cask 'font-snippet' do
+cask "font-snippet" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/snippet/Snippet.ttf'
-  name 'Snippet'
-  homepage 'http://www.google.com/fonts/specimen/Snippet'
+  url "https://github.com/google/fonts/raw/main/ofl/snippet/Snippet.ttf",
+      verified: "github.com/google/fonts/"
+  name "Snippet"
+  homepage "https://fonts.google.com/specimen/Snippet"
 
-  font 'Snippet.ttf'
+  font "Snippet.ttf"
 end

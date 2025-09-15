@@ -1,10 +1,20 @@
-cask 'font-gnu-unifont' do
-  version '9.0.06'
-  sha256 'e217fbf24ac1ba3f028ed937b30b6c27f31fd1288857ca0fb0b11100637c2665'
+cask "font-gnu-unifont" do
+  version "14.0.04"
+  sha256 "1f5e517ccf4cb3a09cffe31ac52de70d8f076fe024a4a2453e07db57bb64febb"
 
-  url "http://unifoundry.com/pub/unifont-#{version}/font-builds/unifont-#{version}.ttf"
-  name 'GNU Unifont'
-  homepage 'http://unifoundry.com/unifont.html'
+  url "https://ftpmirror.gnu.org/unifont/unifont-#{version}/unifont-#{version}.tar.gz",
+      verified: "ftpmirror.gnu.org/unifont/"
+  name "GNU Unifont"
+  homepage "https://unifoundry.com/unifont.html"
 
-  font "unifont-#{version}.ttf"
+  livecheck do
+    url "https://unifoundry.com/pub/unifont/"
+    regex(%r{href=["']?unifont[._-]v?(\d+(?:\.\d+)+)/?["' >]}i)
+  end
+
+  font "unifont-#{version}/font/precompiled/unifont-#{version}.ttf"
+  font "unifont-#{version}/font/precompiled/unifont_upper-#{version}.ttf"
+  font "unifont-#{version}/font/precompiled/unifont_sample-#{version}.ttf"
+  font "unifont-#{version}/font/precompiled/unifont_jp-#{version}.ttf"
+  font "unifont-#{version}/font/precompiled/unifont_csur-#{version}.ttf"
 end

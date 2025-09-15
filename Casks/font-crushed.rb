@@ -1,11 +1,11 @@
-cask 'font-crushed' do
+cask "font-crushed" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/apache/crushed/Crushed.ttf'
-  name 'Crushed'
-  homepage 'http://www.google.com/fonts/specimen/Crushed'
+  url "https://github.com/google/fonts/raw/main/apache/crushed/Crushed-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Crushed"
+  homepage "https://fonts.google.com/specimen/Crushed"
 
-  font 'Crushed.ttf'
+  font "Crushed-Regular.ttf"
 end

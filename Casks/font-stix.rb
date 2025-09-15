@@ -1,17 +1,20 @@
-cask 'font-stix' do
-  version '2.0.0'
-  sha256 '6fac297b27c78891aeca9adb37be54729932e57cdcdb218a9e163671c163d938'
+cask "font-stix" do
+  version "2.13"
+  sha256 "c4671ec4a116d887c8ebf91b2706301bebc43e776ac00f549c36ad1f34964c98"
 
-  # downloads.sourceforge.net/stixfonts was verified as official when first introduced to the cask
-  url "https://downloads.sourceforge.net/stixfonts/Current%20Release/STIXv#{version}.zip"
-  appcast 'https://sourceforge.net/projects/stixfonts/rss?path=/Current%20Release/',
-          checkpoint: 'cd919aa82fecc23debfdf0220d7c640d52b44f84377cd2c417212f70a418f7b3'
-  name 'STIX'
-  homepage 'http://stixfonts.org/'
+  url "https://github.com/stipub/stixfonts/archive/v#{version}.tar.gz",
+      verified: "github.com/stipub/stixfonts/"
+  name "STIX"
+  desc "Unicode fonts for scientific, technical, and mathematical texts"
+  homepage "https://stixfonts.org/"
 
-  font "STIXv#{version}/Fonts/OTF/STIX2Math.otf"
-  font "STIXv#{version}/Fonts/OTF/STIX2Text-Bold.otf"
-  font "STIXv#{version}/Fonts/OTF/STIX2Text-BoldItalic.otf"
-  font "STIXv#{version}/Fonts/OTF/STIX2Text-Italic.otf"
-  font "STIXv#{version}/Fonts/OTF/STIX2Text-Regular.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoMath-Regular.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-Bold.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-BoldItalic.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-Italic.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-Medium.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-MediumItalic.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-Regular.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-SemiBold.otf"
+  font "stixfonts-#{version}/fonts/static_otf/STIXTwoText-SemiBoldItalic.otf"
 end

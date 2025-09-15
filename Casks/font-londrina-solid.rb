@@ -1,11 +1,15 @@
-cask 'font-londrina-solid' do
+cask "font-londrina-solid" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/londrinasolid/LondrinaSolid-Regular.ttf'
-  name 'Londrina Solid'
-  homepage 'http://www.google.com/fonts/specimen/Londrina+Solid'
+  url "https://github.com/google/fonts/trunk/ofl/londrinasolid",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Londrina Solid"
+  homepage "https://fonts.google.com/specimen/Londrina+Solid"
 
-  font 'LondrinaSolid-Regular.ttf'
+  font "LondrinaSolid-Black.ttf"
+  font "LondrinaSolid-Light.ttf"
+  font "LondrinaSolid-Regular.ttf"
+  font "LondrinaSolid-Thin.ttf"
 end

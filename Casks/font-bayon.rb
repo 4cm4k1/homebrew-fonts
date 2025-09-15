@@ -1,11 +1,11 @@
-cask 'font-bayon' do
+cask "font-bayon" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/bayon/Bayon.ttf'
-  name 'Bayon'
-  homepage 'http://www.google.com/fonts/specimen/Bayon'
+  url "https://github.com/google/fonts/raw/main/ofl/bayon/Bayon-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Bayon"
+  homepage "https://fonts.google.com/specimen/Bayon"
 
-  font 'Bayon.ttf'
+  font "Bayon-Regular.ttf"
 end

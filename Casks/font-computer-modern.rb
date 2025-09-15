@@ -1,12 +1,12 @@
-cask 'font-computer-modern' do
-  version '0.7.0'
-  sha256 '2609c14450f42d0bcd40203900afcb1d693521a9b24a18c65e14b6b0585ff150'
+cask "font-computer-modern" do
+  version "0.7.0"
+  sha256 "2609c14450f42d0bcd40203900afcb1d693521a9b24a18c65e14b6b0585ff150"
 
-  url "https://downloads.sourceforge.net/cm-unicode/cm-unicode-#{version}-ttf.tar.xz"
-  appcast 'https://sourceforge.net/projects/cm-unicode/rss',
-          checkpoint: '58901407c65014a7e0533bd2b901fbc8eb775b1502b76d9efc40c61659847d0c'
-  name 'Computer Modern'
-  homepage 'http://cm-unicode.sourceforge.net/'
+  url "https://downloads.sourceforge.net/cm-unicode/cm-unicode-#{version}-ttf.tar.xz",
+      verified: "downloads.sourceforge.net/cm-unicode/"
+  appcast "https://sourceforge.net/projects/cm-unicode/rss"
+  name "Computer Modern"
+  homepage "https://cm-unicode.sourceforge.io/"
 
   font "cm-unicode-#{version}/cmunbbx.ttf"
   font "cm-unicode-#{version}/cmunbi.ttf"

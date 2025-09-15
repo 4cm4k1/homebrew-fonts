@@ -1,11 +1,11 @@
-cask 'font-belgrano' do
+cask "font-belgrano" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/belgrano/Belgrano-Regular.ttf'
-  name 'Belgrano'
-  homepage 'http://www.google.com/fonts/specimen/Belgrano'
+  url "https://github.com/google/fonts/raw/main/ofl/belgrano/Belgrano-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Belgrano"
+  homepage "https://fonts.google.com/specimen/Belgrano"
 
-  font 'Belgrano-Regular.ttf'
+  font "Belgrano-Regular.ttf"
 end

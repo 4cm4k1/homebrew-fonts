@@ -1,15 +1,18 @@
-cask 'font-mononoki-nerd-font' do
-  version '1.0.0'
-  sha256 'f3d81aba13bad8f636b35e08aeeaa19b928144122512e701fdec8716fb89e920'
+cask "font-mononoki-nerd-font" do
+  version "2.1.0"
+  sha256 "bc88f1350e2040cb30404e5d52daab24635f0a5b05924833bbc008eab6dd8a1c"
 
   url "https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/Mononoki.zip"
-  appcast 'https://github.com/ryanoasis/nerd-fonts/releases.atom',
-          checkpoint: 'dbe84e88af08eb844f7f21de92a1fc57e8df10d3028055aff03e0441598806df'
-  name 'mononoki Nerd Font (Mononoki)'
-  homepage 'https://github.com/ryanoasis/nerd-fonts'
+  appcast "https://github.com/ryanoasis/nerd-fonts/releases.atom"
+  name "Mononoki Nerd Font (Mononoki)"
+  homepage "https://github.com/ryanoasis/nerd-fonts"
 
-  font 'mononoki Bold Italic Nerd Font Complete.ttf'
-  font 'mononoki Italic Nerd Font Complete.ttf'
-  font 'mononoki Bold Nerd Font Complete.ttf'
-  font 'mononoki-Regular Nerd Font Complete.ttf'
+  font "mononoki Bold Italic Nerd Font Complete.ttf"
+  font "mononoki Italic Nerd Font Complete.ttf"
+  font "mononoki Bold Nerd Font Complete.ttf"
+  font "mononoki-Regular Nerd Font Complete.ttf"
+  font "mononoki Bold Italic Nerd Font Complete Mono.ttf"
+  font "mononoki Italic Nerd Font Complete Mono.ttf"
+  font "mononoki Bold Nerd Font Complete Mono.ttf"
+  font "mononoki-Regular Nerd Font Complete Mono.ttf"
 end

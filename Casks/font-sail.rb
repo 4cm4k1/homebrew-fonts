@@ -1,11 +1,11 @@
-cask 'font-sail' do
+cask "font-sail" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/sail/Sail-Regular.ttf'
-  name 'Sail'
-  homepage 'http://www.google.com/fonts/specimen/Sail'
+  url "https://github.com/google/fonts/raw/main/ofl/sail/Sail-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Sail"
+  homepage "https://fonts.google.com/specimen/Sail"
 
-  font 'Sail-Regular.ttf'
+  font "Sail-Regular.ttf"
 end

@@ -1,11 +1,11 @@
-cask 'font-redressed' do
+cask "font-redressed" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/apache/redressed/Redressed.ttf'
-  name 'Redressed'
-  homepage 'http://www.google.com/fonts/specimen/Redressed'
+  url "https://github.com/google/fonts/raw/main/apache/redressed/Redressed-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Redressed"
+  homepage "https://fonts.google.com/specimen/Redressed"
 
-  font 'Redressed.ttf'
+  font "Redressed-Regular.ttf"
 end

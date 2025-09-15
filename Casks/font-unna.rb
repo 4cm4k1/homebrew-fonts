@@ -1,11 +1,15 @@
-cask 'font-unna' do
+cask "font-unna" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/unna/Unna-Regular.ttf'
-  name 'Unna'
-  homepage 'http://www.google.com/fonts/specimen/Unna'
+  url "https://github.com/google/fonts/trunk/ofl/unna",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Unna"
+  homepage "https://fonts.google.com/specimen/Unna"
 
-  font 'Unna-Regular.ttf'
+  font "Unna-Bold.ttf"
+  font "Unna-BoldItalic.ttf"
+  font "Unna-Italic.ttf"
+  font "Unna-Regular.ttf"
 end

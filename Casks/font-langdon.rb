@@ -1,10 +1,10 @@
-cask 'font-langdon' do
+cask "font-langdon" do
   version :latest
   sha256 :no_check
 
-  url 'http://www.ffonts.net/Langdon.font.zip'
-  name 'Langdon'
-  homepage 'http://www.ffonts.net/Langdon.font'
+  url "https://www.ffonts.net/Langdon.font.zip"
+  name "Langdon"
+  homepage "https://www.ffonts.net/Langdon.font"
 
-  font 'Langdon.otf'
+  font "Langdon.otf"
 end

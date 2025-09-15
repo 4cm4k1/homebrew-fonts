@@ -1,11 +1,11 @@
-cask 'font-kavoon' do
+cask "font-kavoon" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/kavoon/Kavoon-Regular.ttf'
-  name 'Kavoon'
-  homepage 'http://www.google.com/fonts/specimen/Kavoon'
+  url "https://github.com/google/fonts/raw/main/ofl/kavoon/Kavoon-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Kavoon"
+  homepage "https://fonts.google.com/specimen/Kavoon"
 
-  font 'Kavoon-Regular.ttf'
+  font "Kavoon-Regular.ttf"
 end

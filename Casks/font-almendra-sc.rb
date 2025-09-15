@@ -1,17 +1,11 @@
-cask 'font-almendra-sc' do
+cask "font-almendra-sc" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/almendrasc',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Almendra SC'
-  homepage 'http://www.google.com/fonts/specimen/Almendra%20SC'
+  url "https://github.com/google/fonts/raw/main/ofl/almendrasc/AlmendraSC-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Almendra SC"
+  homepage "https://fonts.google.com/specimen/Almendra+SC"
 
-  font 'AlmendraSC-Bold.ttf'
-  font 'AlmendraSC-BoldItalic.ttf'
-  font 'AlmendraSC-Italic.ttf'
-  font 'AlmendraSC-Regular.ttf'
+  font "AlmendraSC-Regular.ttf"
 end

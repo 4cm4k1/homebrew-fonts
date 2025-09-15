@@ -1,11 +1,11 @@
-cask 'font-euphoria-script' do
+cask "font-euphoria-script" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/euphoriascript/EuphoriaScript-Regular.ttf'
-  name 'Euphoria Script'
-  homepage 'http://www.google.com/fonts/specimen/Euphoria+Script'
+  url "https://github.com/google/fonts/raw/main/ofl/euphoriascript/EuphoriaScript-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Euphoria Script"
+  homepage "https://fonts.google.com/specimen/Euphoria+Script"
 
-  font 'EuphoriaScript-Regular.ttf'
+  font "EuphoriaScript-Regular.ttf"
 end

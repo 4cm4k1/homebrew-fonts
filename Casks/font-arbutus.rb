@@ -1,11 +1,11 @@
-cask 'font-arbutus' do
+cask "font-arbutus" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/arbutus/Arbutus-Regular.ttf'
-  name 'Arbutus'
-  homepage 'http://www.google.com/fonts/specimen/Arbutus'
+  url "https://github.com/google/fonts/raw/main/ofl/arbutus/Arbutus-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Arbutus"
+  homepage "https://fonts.google.com/specimen/Arbutus"
 
-  font 'Arbutus-Regular.ttf'
+  font "Arbutus-Regular.ttf"
 end

@@ -1,16 +1,13 @@
-cask 'font-nunito' do
+cask "font-nunito" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/nunito',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Nunito'
-  homepage 'http://www.google.com/fonts/specimen/Nunito'
+  url "https://github.com/google/fonts/trunk/ofl/nunito",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Nunito"
+  homepage "https://fonts.google.com/specimen/Nunito"
 
-  font 'Nunito-Bold.ttf'
-  font 'Nunito-Light.ttf'
-  font 'Nunito-Regular.ttf'
+  font "Nunito-Italic[wght].ttf"
+  font "Nunito[wght].ttf"
 end

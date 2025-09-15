@@ -1,11 +1,11 @@
-cask 'font-sofadi-one' do
+cask "font-sofadi-one" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/sofadione/SofadiOne-Regular.ttf'
-  name 'Sofadi One'
-  homepage 'http://www.google.com/fonts/specimen/Sofadi+One'
+  url "https://github.com/google/fonts/raw/main/ofl/sofadione/SofadiOne-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Sofadi One"
+  homepage "https://fonts.google.com/specimen/Sofadi+One"
 
-  font 'SofadiOne-Regular.ttf'
+  font "SofadiOne-Regular.ttf"
 end

@@ -1,11 +1,11 @@
-cask 'font-abril-fatface' do
+cask "font-abril-fatface" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/abrilfatface/AbrilFatface-Regular.ttf'
-  name 'Abril Fatface'
-  homepage 'http://www.google.com/fonts/specimen/Abril%20Fatface'
+  url "https://github.com/google/fonts/raw/main/ofl/abrilfatface/AbrilFatface-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Abril Fatface"
+  homepage "https://fonts.google.com/specimen/Abril+Fatface"
 
-  font 'AbrilFatface-Regular.ttf'
+  font "AbrilFatface-Regular.ttf"
 end

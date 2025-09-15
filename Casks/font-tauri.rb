@@ -1,11 +1,11 @@
-cask 'font-tauri' do
+cask "font-tauri" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/tauri/Tauri-Regular.ttf'
-  name 'Tauri'
-  homepage 'http://www.google.com/fonts/specimen/Tauri'
+  url "https://github.com/google/fonts/raw/main/ofl/tauri/Tauri-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Tauri"
+  homepage "https://fonts.google.com/specimen/Tauri"
 
-  font 'Tauri-Regular.ttf'
+  font "Tauri-Regular.ttf"
 end

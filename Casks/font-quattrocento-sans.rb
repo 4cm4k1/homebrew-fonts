@@ -1,17 +1,15 @@
-cask 'font-quattrocento-sans' do
+cask "font-quattrocento-sans" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/quattrocentosans',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Quattrocento Sans'
-  homepage 'http://www.google.com/fonts/specimen/Quattrocento%20Sans'
+  url "https://github.com/google/fonts/trunk/ofl/quattrocentosans",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Quattrocento Sans"
+  homepage "https://fonts.google.com/specimen/Quattrocento+Sans"
 
-  font 'QuattrocentoSans-Bold.ttf'
-  font 'QuattrocentoSans-BoldItalic.ttf'
-  font 'QuattrocentoSans-Italic.ttf'
-  font 'QuattrocentoSans-Regular.ttf'
+  font "QuattrocentoSans-Bold.ttf"
+  font "QuattrocentoSans-BoldItalic.ttf"
+  font "QuattrocentoSans-Italic.ttf"
+  font "QuattrocentoSans-Regular.ttf"
 end

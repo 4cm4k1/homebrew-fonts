@@ -1,15 +1,13 @@
-cask 'font-news-cycle' do
+cask "font-news-cycle" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/newscycle',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'News Cycle'
-  homepage 'http://www.google.com/fonts/specimen/News%20Cycle'
+  url "https://github.com/google/fonts/trunk/ofl/newscycle",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "News Cycle"
+  homepage "https://fonts.google.com/specimen/News+Cycle"
 
-  font 'NewsCycle-Bold.ttf'
-  font 'NewsCycle-Regular.ttf'
+  font "NewsCycle-Bold.ttf"
+  font "NewsCycle-Regular.ttf"
 end

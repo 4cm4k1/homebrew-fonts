@@ -1,12 +1,20 @@
-cask 'font-inconsolata-nerd-font' do
-  version '1.0.0'
-  sha256 '5edfa11f7d06d97bc3d79cd84b9e2fe39189ddc9859e0e4d23369fab079b1034'
+cask "font-inconsolata-nerd-font" do
+  version "2.1.0"
+  sha256 "21b2e09afb0fd7f0c06aba6605dae79abe1b7c9e695fc34d2232b43101e3eb91"
 
   url "https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/Inconsolata.zip"
-  appcast 'https://github.com/ryanoasis/nerd-fonts/releases.atom',
-          checkpoint: 'dbe84e88af08eb844f7f21de92a1fc57e8df10d3028055aff03e0441598806df'
-  name 'InconsolataForPowerline Nerd Font (Inconsolata)'
-  homepage 'https://github.com/ryanoasis/nerd-fonts'
+  appcast "https://github.com/ryanoasis/nerd-fonts/releases.atom"
+  name "Inconsolata Nerd Font (Inconsolata)"
+  homepage "https://github.com/ryanoasis/nerd-fonts"
 
-  font 'Inconsolata for Powerline Nerd Font Complete.otf'
+  font "Inconsolata Regular Nerd Font Complete.otf"
+  font "Inconsolata Bold Nerd Font Complete.ttf"
+  font "Inconsolata Bold Nerd Font Complete Mono.otf"
+  font "Inconsolata Regular Nerd Font Complete Mono.ttf"
+  font "Inconsolata Nerd Font Complete.otf"
+  font "Inconsolata Nerd Font Complete Mono.otf"
+  font "Inconsolata Regular Nerd Font Complete Mono.otf"
+  font "Inconsolata Bold Nerd Font Complete.otf"
+  font "Inconsolata Regular Nerd Font Complete.ttf"
+  font "Inconsolata Bold Nerd Font Complete Mono.ttf"
 end

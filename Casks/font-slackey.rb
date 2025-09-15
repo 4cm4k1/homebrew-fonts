@@ -1,11 +1,11 @@
-cask 'font-slackey' do
+cask "font-slackey" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/apache/slackey/Slackey.ttf'
-  name 'Slackey'
-  homepage 'http://www.google.com/fonts/specimen/Slackey'
+  url "https://github.com/google/fonts/raw/main/apache/slackey/Slackey-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Slackey"
+  homepage "https://fonts.google.com/specimen/Slackey"
 
-  font 'Slackey.ttf'
+  font "Slackey-Regular.ttf"
 end

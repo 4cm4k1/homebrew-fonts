@@ -1,11 +1,11 @@
-cask 'font-marcellus' do
+cask "font-marcellus" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/marcellus/Marcellus-Regular.ttf'
-  name 'Marcellus'
-  homepage 'http://www.google.com/fonts/specimen/Marcellus'
+  url "https://github.com/google/fonts/raw/main/ofl/marcellus/Marcellus-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Marcellus"
+  homepage "https://fonts.google.com/specimen/Marcellus"
 
-  font 'Marcellus-Regular.ttf'
+  font "Marcellus-Regular.ttf"
 end

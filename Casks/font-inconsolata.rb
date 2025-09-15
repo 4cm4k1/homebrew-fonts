@@ -1,14 +1,11 @@
-cask 'font-inconsolata' do
+cask "font-inconsolata" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/inconsolata',
-      using:      :svn,
-      trust_cert: true
-  name 'Inconsolata'
-  homepage 'http://levien.com/type/myfonts/inconsolata.html'
+  url "https://github.com/google/fonts/raw/main/ofl/inconsolata/Inconsolata%5Bwdth%2Cwght%5D.ttf",
+      verified: "github.com/google/fonts/"
+  name "Inconsolata"
+  homepage "https://fonts.google.com/specimen/Inconsolata"
 
-  font 'Inconsolata-Regular.ttf'
-  font 'Inconsolata-Bold.ttf'
+  font "Inconsolata[wdth,wght].ttf"
 end

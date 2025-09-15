@@ -1,52 +1,54 @@
 # How To Contribute
 
-So you want to contribute to the project. **THIS IS GREAT NEWS!** Seriously. We’re all pretty happy about this.
+[Instructions from the main repository](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md) apply. Exceptions are documented on the [README](README.md) and this document.
 
-## Getting Started
+## When to contribute
 
-See [CONTRIBUTING.md](https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md) in the main homebrew-cask repo for general info on how to get set up.
+The preferred way to add a font to this repository is to [submit it to Google Fonts](https://github.com/google/fonts/blob/master/CONTRIBUTING.md). Shortly after its inclusion, a Cask will be automatically generated and updated on this repository.
+
+We accept fonts from other sources **but they must be provably popular**, like [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) and [iA Fonts](https://github.com/iaolo/iA-Fonts). To build one of those, keep reading.
 
 ## Adding a Font Cask
 
 Making a Font Cask is easy: a Cask is a small Ruby file.
 
-Here’s a Cask for the font [Inconsolata](http://levien.com/type/myfonts/inconsolata.html) as an example:
+Here’s a Cask for the font [Ionicons](https://github.com/ionic-team/ionicons) as an example:
 ```ruby
-cask 'font-inconsolata' do
-  version :latest
-  sha256 :no_check
+cask "font-ionicons" do
+  version "2.0.1"
+  sha256 "b222fcaede908b71d5b206db9fb7b625a07d313be00ee908eabd267604868661"
 
-  url 'http://levien.com/type/myfonts/Inconsolata.otf'
-  name 'Inconsolata'
-  homepage 'http://levien.com/type/myfonts/inconsolata.html'
+  url "https://github.com/ionic-team/ionicons/archive/v#{version}.zip"
+  appcast "https://github.com/ionic-team/ionicons/releases.atom"
+  name "Ionicons"
+  homepage "https://github.com/ionic-team/ionicons"
 
-  font 'Inconsolata.otf'
+  font "ionicons-#{version}/fonts/ionicons.ttf"
 end
 ```
 
 Here’s a more complex Cask for the font [Fantasque Sans Mono](https://github.com/belluzj/fantasque-sans). Note that you may repeat the `font` stanza as many times as you need to, if multiple files must be installed from the same package:
 
 ```ruby
-cask 'font-fantasque-sans-mono' do
-  version '1.7.1'
-  sha256 '6bb3b24413b78eed19ffa9bd233ae555982e3b185bd303e57dd1e05bebf17352'
+cask "font-fantasque-sans-mono" do
+  version "1.8.0"
+  sha256 "84be689e231ff773ed9d352e83dccd8151d9e445f1cb0b88cb0e9330fc4d9cfc"
 
-  url "https://github.com/belluzj/fantasque-sans/releases/download/v#{version}/FantasqueSansMono.zip"
-  appcast 'https://github.com/belluzj/fantasque-sans/releases.atom',
-          checkpoint: '8085c3dff43a9dbf3201ca790c57800a089d1b69fec91226a600c04d9c681e36'
-  name 'Fantasque Sans Mono'
-  homepage 'https://github.com/belluzj/fantasque-sans'
+  url "https://github.com/belluzj/fantasque-sans/releases/download/v#{version}/FantasqueSansMono-Normal.zip"
+  appcast "https://github.com/belluzj/fantasque-sans/releases.atom"
+  name "Fantasque Sans Mono"
+  homepage "https://github.com/belluzj/fantasque-sans"
 
-  font 'OTF/FantasqueSansMono-Bold.otf'
-  font 'OTF/FantasqueSansMono-BoldItalic.otf'
-  font 'OTF/FantasqueSansMono-Italic.otf'
-  font 'OTF/FantasqueSansMono-Regular.otf'
+  font "OTF/FantasqueSansMono-Bold.otf"
+  font "OTF/FantasqueSansMono-BoldItalic.otf"
+  font "OTF/FantasqueSansMono-Italic.otf"
+  font "OTF/FantasqueSansMono-Regular.otf"
 end
 ```
 
 ## Font Cask Fields
 
-The `url`, `homepage`, `version`, and `sha256` fields in a Font Cask are required, as described in [CONTRIBUTING.md](https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md) for the main homebrew-cask repo. Note that if the download `url` is not a versioned file, `sha256 <hexstring>` should be replaced with `sha256 :no_check`, and `version` should be set to `:latest`.
+The `url`, `homepage`, `version`, and `sha256` fields in a Font Cask are required, as described in [CONTRIBUTING.md](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md) for the main Homebrew Cask repo. Note that if the download `url` is not a versioned file, `sha256 <hexstring>` should be replaced with `sha256 :no_check`, and `version` should be set to `:latest`.
 
 The string which follows the `font` field is a relative path to the font file within the downloaded archive. That font will be linked into the user’s `~/Library/Fonts` directory at install time.
 
@@ -55,12 +57,12 @@ The string which follows the `font` field is a relative path to the font file wi
 For OTF and TTF fonts, the easiest way to create a cask is to run the `font_casker` script on their containing archive.
 
 ```bash
-"$(brew --repository)/Library/Taps/caskroom/homebrew-fonts/developer/bin/font_casker" font_archive.zip
+"$(brew --repository)/Library/Taps/homebrew/homebrew-cask-fonts/developer/bin/font_casker" font_archive.zip
 ```
 
 `font_casker` produces a preformatted cask including the values of `version`, `sha256`, and all `font` stanzas, and writes it to stdout.
 
-Note that `font_casker` depends on `otfinfo`, a command-line utility from the lcdf-typetools suite of typographical software. You can obtain it as part of a TeX distribution with `brew cask install mactex`, or from upstream with `brew install lcdf-typetools`.
+Note that `font_casker` depends on `otfinfo`, a command-line utility from the lcdf-typetools suite of typographical software. You can obtain it as part of a TeX distribution with `brew install --cask mactex`, or from upstream with `brew install lcdf-typetools`.
 
 ## Naming Font Casks
 
@@ -68,7 +70,7 @@ We try to maintain a consistent naming policy so everything stays clean and pred
 
 ### Start From the Font’s Canonical Name
 
-The canonical font name is the font family name as returned by the command `fc-query --format=’%{family}’`.
+The canonical font name is the font family name as returned by the command `fc-query --format='%{family}' {{font_file}}`.
 
 If there is more than one family in the distribution, use your judgment to choose the “most famous” one. If there is more than one style, choose the “Regular” variant.
 
@@ -114,7 +116,7 @@ This constraint may change in the future, when the backend Ruby code becomes mor
 
 ### Multiple Font Formats
 
-If a distribution provides multiple file formats for the same font, for example both TTF and OTF files, only include one kind. OTF is preferred over TTF.
+If a distribution provides the same font in multiple file formats, for example both OpenType and TrueType, only include one kind. We prefer OTF to TTF, and variable fonts to static files for different instantiations. Where a distribution provides variable and static fonts under different family names, both can be included for backwards compatibility as long as they can be contained within a single cask. Example: [font-source-serif-pro.rb](https://github.com/Homebrew/homebrew-cask-fonts/blob/ab3e5d7d313b64c0a2c4041196a8eaa8e1539c9c/Casks/font-source-serif-pro.rb#L10#L23).
 
 Note that `font_casker` generates font stanzas for all files, so its output should be edited as needed.
 
@@ -126,12 +128,4 @@ At this time, homebrew-fonts is only accepting Casks for fonts which are freely 
 
 ### Upstream Links Are Preferred
 
-We prefer to have the Casks point to font download links as high up the distribution chain as possible. This generally means linking directly to the download from the font’s author when possible rather than from a site that aggregates fonts.
-
-### Google Web Font Directory
-
-This repository was seeded with fonts from Google Web Font Directory. If you wish to rewrite a Google Web Font Cask with a `url` pointing to the upstream type foundry, please do: we consider that an upgrade.
-
-For some fonts, Google Web Font Directory is the only current source. Writing the `url` stanza for those cases may require using some unusual features of the Cask language. See example [font-lekton.rb](https://github.com/caskroom/homebrew-fonts/blob/68bd19db46cc1b386eda3bcf72fbb70fcbf7a73b/Casks/font-lekton.rb), consult [cask_language_reference](https://github.com/caskroom/homebrew-cask/tree/master/doc/cask_language_reference), or contact the maintainers.
-
-**<3 THANK YOU TO ALL CONTRIBUTORS! <3**
+Generally, we prefer to have Casks point to font download links as high up the distribution chain as possible. This means linking to the download from the font’s author rather than from an aggregator site. The exception is when the font is available on the [Google Fonts GitHub repository](https://github.com/google/fonts), because those are added and managed automatically [with a script](https://github.com/Homebrew/homebrew-cask-fonts/blob/master/developer/bin/import_google_fonts).

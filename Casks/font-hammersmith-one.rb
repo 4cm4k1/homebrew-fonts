@@ -1,11 +1,11 @@
-cask 'font-hammersmith-one' do
+cask "font-hammersmith-one" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/hammersmithone/HammersmithOne-Regular.ttf'
-  name 'Hammersmith One'
-  homepage 'http://www.google.com/fonts/specimen/Hammersmith+One'
+  url "https://github.com/google/fonts/raw/main/ofl/hammersmithone/HammersmithOne-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Hammersmith One"
+  homepage "https://fonts.google.com/specimen/Hammersmith+One"
 
-  font 'HammersmithOne-Regular.ttf'
+  font "HammersmithOne-Regular.ttf"
 end

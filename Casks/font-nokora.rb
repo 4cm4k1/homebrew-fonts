@@ -1,15 +1,16 @@
-cask 'font-nokora' do
+cask "font-nokora" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/apache/nokora',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Nokora'
-  homepage 'http://www.google.com/fonts/specimen/Nokora'
+  url "https://github.com/google/fonts/trunk/ofl/nokora",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Nokora"
+  homepage "https://fonts.google.com/specimen/Nokora"
 
-  font 'Nokora-Bold.ttf'
-  font 'Nokora-Regular.ttf'
+  font "Nokora-Black.ttf"
+  font "Nokora-Bold.ttf"
+  font "Nokora-Light.ttf"
+  font "Nokora-Regular.ttf"
+  font "Nokora-Thin.ttf"
 end

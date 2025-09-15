@@ -1,15 +1,13 @@
-cask 'font-stardos-stencil' do
+cask "font-stardos-stencil" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/stardosstencil',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Stardos Stencil'
-  homepage 'http://www.google.com/fonts/specimen/Stardos%20Stencil'
+  url "https://github.com/google/fonts/trunk/ofl/stardosstencil",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Stardos Stencil"
+  homepage "https://fonts.google.com/specimen/Stardos+Stencil"
 
-  font 'StardosStencil-Bold.ttf'
-  font 'StardosStencil-Regular.ttf'
+  font "StardosStencil-Bold.ttf"
+  font "StardosStencil-Regular.ttf"
 end

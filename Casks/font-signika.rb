@@ -1,17 +1,12 @@
-cask 'font-signika' do
+cask "font-signika" do
   version :latest
   sha256 :no_check
 
-  url 'http://fontfabric.com/downfont/signika.zip'
-  name 'Signika'
-  homepage 'http://fontfabric.com/signika-font/'
+  url "https://github.com/google/fonts/raw/main/ofl/signika/Signika%5Bwght%5D.ttf",
+      verified: "github.com/google/fonts/"
+  name "Signika"
+  desc "Sans-serif signage typeface with a gentle character"
+  homepage "https://fonts.google.com/specimen/Signika"
 
-  font 'Signika/Signika-Bold.ttf'
-  font 'Signika/Signika-Light.ttf'
-  font 'Signika/Signika-Regular.ttf'
-  font 'Signika/Signika-Semibold.ttf'
-  font 'Signika_Negative/SignikaNegative-Bold.ttf'
-  font 'Signika_Negative/SignikaNegative-Light.ttf'
-  font 'Signika_Negative/SignikaNegative-Regular.ttf'
-  font 'Signika_Negative/SignikaNegative-Semibold.ttf'
+  font "Signika[wght].ttf"
 end

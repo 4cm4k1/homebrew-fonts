@@ -1,11 +1,11 @@
-cask 'font-atomic-age' do
+cask "font-atomic-age" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/raw/master/ofl/atomicage/AtomicAge-Regular.ttf'
-  name 'Atomic Age'
-  homepage 'http://www.google.com/fonts/specimen/Atomic+Age'
+  url "https://github.com/google/fonts/raw/main/ofl/atomicage/AtomicAge-Regular.ttf",
+      verified: "github.com/google/fonts/"
+  name "Atomic Age"
+  homepage "https://fonts.google.com/specimen/Atomic+Age"
 
-  font 'AtomicAge-Regular.ttf'
+  font "AtomicAge-Regular.ttf"
 end

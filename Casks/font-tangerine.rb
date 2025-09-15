@@ -1,15 +1,13 @@
-cask 'font-tangerine' do
+cask "font-tangerine" do
   version :latest
   sha256 :no_check
 
-  # github.com/google/fonts was verified as official when first introduced to the cask
-  url 'https://github.com/google/fonts/trunk/ofl/tangerine',
-      using:      :svn,
-      revision:   '50',
-      trust_cert: true
-  name 'Tangerine'
-  homepage 'http://www.google.com/fonts/specimen/Tangerine'
+  url "https://github.com/google/fonts/trunk/ofl/tangerine",
+      verified: "github.com/google/fonts/",
+      using:    :svn
+  name "Tangerine"
+  homepage "https://fonts.google.com/specimen/Tangerine"
 
-  font 'Tangerine_Bold.ttf'
-  font 'Tangerine_Regular.ttf'
+  font "Tangerine-Bold.ttf"
+  font "Tangerine-Regular.ttf"
 end

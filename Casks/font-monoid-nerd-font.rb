@@ -1,15 +1,18 @@
-cask 'font-monoid-nerd-font' do
-  version '1.0.0'
-  sha256 '8a0d84174ec3a79cf625bf9cd5e9181470d4d3d627ed88a15abc37ae8c94571f'
+cask "font-monoid-nerd-font" do
+  version "2.1.0"
+  sha256 "ad111056f16d6174482aa5c4ae23b0300e71acc095a20d698a15f3e8a440f154"
 
   url "https://github.com/ryanoasis/nerd-fonts/releases/download/v#{version}/Monoid.zip"
-  appcast 'https://github.com/ryanoasis/nerd-fonts/releases.atom',
-          checkpoint: 'dbe84e88af08eb844f7f21de92a1fc57e8df10d3028055aff03e0441598806df'
-  name 'Monoid Nerd Font (Monoid)'
-  homepage 'https://github.com/ryanoasis/nerd-fonts'
+  appcast "https://github.com/ryanoasis/nerd-fonts/releases.atom"
+  name "Monoid Nerd Font (Monoid)"
+  homepage "https://github.com/ryanoasis/nerd-fonts"
 
-  font 'Monoid Italic Nerd Font Complete.ttf'
-  font 'Monoid Bold Nerd Font Complete.ttf'
-  font 'Monoid Retina Nerd Font Complete.ttf'
-  font 'Monoid Regular Nerd Font Complete.ttf'
+  font "Monoid Italic Nerd Font Complete.ttf"
+  font "Monoid Bold Nerd Font Complete.ttf"
+  font "Monoid Retina Nerd Font Complete.ttf"
+  font "Monoid Regular Nerd Font Complete.ttf"
+  font "Monoid Italic Nerd Font Complete Mono.ttf"
+  font "Monoid Bold Nerd Font Complete Mono.ttf"
+  font "Monoid Retina Nerd Font Complete Mono.ttf"
+  font "Monoid Regular Nerd Font Complete Mono.ttf"
 end
